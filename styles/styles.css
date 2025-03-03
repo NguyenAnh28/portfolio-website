@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+li, a, button {
+    font-family: "Teko", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: rgb(119, 119, 119);
+}
+
+button {
+    color: white;
+    padding: 9px 25px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(255, 252, 252);
+    border: 2px solid #000000;
+    color: black;
+}
+
+
+/* Style the container */
+.typewriter {
+    font-family: 'Courier New', Courier, monospace; /* Typewriter-style font */
+    font-size: 2rem; /* Adjust size */
+    overflow: hidden; /* Ensures text stays within bounds */
+    border-right: 4px solid black; /* Adds a blinking cursor effect */
+    width: 5px; /* Initially set width to 0 for the effect */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end 4s forwards; /* Animates typing and blinking cursor */
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 5px;
+    }
+    to {
+        width: 100%; /* Final width is 100% to show the entire text */
+    }
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
